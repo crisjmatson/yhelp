@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>repl.it</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@200&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="2-1.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="top-wrapper">
+			<h1>Yhelp</h1>
+
+			<form class="repl-form">
+				<fieldset>
+					<legend>please detail your experience below:</legend>
+					<label for="place" class="question"
+						>which restaurant would you like to complain to?
+						<input id="place" class="info placeQ" type="text" /></label
+					><br />
+
+					<label for="quantity" class="question"
+						>how many times have you eaten there?
+						<input
+							id="quantity"
+							class="info quantityQ"
+							type="number"
+							required /></label
+					><br />
+
+					<label for="product" class="question"
+						>which food item ruined your night?
+						<input id="product" class="info productQ" type="text" required
+					/></label>
+
+					<h5>thank you for your feedback.</h5>
+					<h6>please do not return.</h6>
+					<input
+						name="submit"
+						id="submit"
+						type="submit"
+						value="Submit"
+						required
+					/>
+				</fieldset>
+			</form>
+		</div>
+		<div class="bottom-wrapper">
+			<h3>recent reviews:</h3>
+			<ul class="ulReviews">
+				<li>"Terrible, no good, awful food."</li>
+				<li>"So good it made me cry, but I don't tip above 5%."</li>
+				<li>
+					"On a SATURDAY at 830PM our server neglected our water refil for 13
+					minutes. UNACCEPTABLE."
+				</li>
+			</ul>
+		</div>
+
+		<script src="2-1.js"></script>
+	</body>
+</html>
