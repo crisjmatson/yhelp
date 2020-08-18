@@ -13,6 +13,7 @@ function logResults(e) {
 	let placeA = placeEntry.value;
 	let quantityA = quantityEntry.value;
 	let productA = productEntry.value;
+	let firstReview = document.querySelector(".firstLi");
 	let reviewEntry = document.createElement("li");
 
 	console.log(
@@ -20,6 +21,6 @@ function logResults(e) {
 	);
 	let newReview = `"I've eaten at ${placeA} about ${quantityA} times and the ${productA} I was served last night was nothing short of horrendous."`;
 
-	reviewsList.appendChild(reviewEntry);
+	reviewsList.insertBefore(reviewEntry, firstReview);
 	reviewEntry.textContent = newReview;
 }
